@@ -1,0 +1,540 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#ff8d00;
+}
+
+
+/* ========== navbar ============ */
+.navbar-nav .nav-link{
+    /* color: var(--primary-color); */
+    color: black;
+    font-weight: bold;
+}
+.navbar-nav .nav-link:hover{
+    transition: .5s;
+    color: var(--primary-color);
+}
+.navbar-nav .dropdown-menu .dropdown-item{
+    font-weight: bold;
+}
+.navbar-nav .dropdown-menu .dropdown-item:hover{
+    transition: .5s;
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.search_btn{
+    background-color: var(--primary-color);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 50px;
+}
+.search_btn:hover{
+    transition: .5s;
+    background-color:black;
+    border-radius: 5px;
+    color: #fff;
+}
+/* ========== navbar ============ */
+
+/* ========== banner-section ============ */
+.banner_bg{
+    background: rgba(0,0,0,0.7) url(Images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+}
+
+.banner_div{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 110px 0px;
+    color: #fff;
+    /* background-color: red; */
+}
+.banner_div h1{
+    font-size: 3.5rem;
+}
+.banner_div p{
+    font-size: .9rem;
+}
+/* ========== banner-section ============ */
+
+
+/* ========== card-section ============ */
+.card-group{
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.card-group .card{
+    border: none;
+}
+.card_section .card{
+    margin-top: 5px;
+    border-radius: 0px;
+    transition: .0s ease-in-out;
+}
+.card_section .card:hover{
+    transform: translateY(10px);
+}
+.card_section .card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 140, 0, 0.384),rgba(255,141,0,1.5));
+    z-index: 2;
+    transition: .5s all;
+    opacity: 0;
+}
+
+.card_section .card:hover:before{
+    opacity: 1;
+}
+
+.card_section .card .card-body{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .5s all;
+}
+
+.card_section .card:hover .card-body{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+.card_section .card-title{
+    font-weight: bold;
+    color: white;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+.card_btn{
+    background-color:black;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.card_btn:hover{
+    transition: .5s;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: #fff;
+}
+.digi_div{
+    background: url(Images/digital-marketing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+}
+.web_div{
+    background: url(Images/webdevlopment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+}
+.SEO_div{
+    background: url(Images/seo-service3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+}
+
+.business_div{
+    background: url(Images/Business.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+}
+/* ========== card-section ============ */
+
+
+/* ========== service-section ============ */
+.service_div{
+    margin-top: 40px;
+}
+.service_div .common_card{
+    /* background-color: var(--primary-color); */
+    background-color: gray;
+    border: none;
+    margin-top: 10px;
+}
+.service_div .common_card:hover{
+    transition: .5s ease-in-out;
+    background-color: var(--primary-color);
+    border: none;
+}
+.txt_div h5{
+    color: #fff;
+    padding-left: 20px;
+}
+.txt_div p{
+    color: #fff;
+    padding-left: 20px;
+}
+.ser_txt{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.icon_div{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 35%;
+    text-align: center;
+    margin-left: 33px;
+    margin-top: 30px;
+}
+.icon_div:hover{
+    transition: .8s;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+.icon_div i{
+    font-size: 3rem;
+    padding: 18px 0px;
+}
+.best_div{
+    border: none;
+}
+.txt_div2 h5{
+    color: black;
+    padding-left: 20px;
+}
+.txt_div2 p{
+    color: black;
+    padding-left: 20px;
+}
+.icon_div2{
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    width: 35%;
+    text-align: center;
+    margin-left: 33px;
+    margin-top: 30px;
+}
+.icon_div2:hover{
+    transition: .8s;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+.icon_div2 i{
+    font-size: 3rem;
+    padding: 18px 0px;
+}
+
+.customer_div{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.customer_div .card{
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+}
+#shadow_div{
+    border-radius: 5px;
+    position: absolute;
+    top: 1510px;
+    left: 130px;
+    height: 370px;
+    width: 43%;
+    background-color: var(--primary-color);
+}
+
+.customer_btn{
+    background-color: var(--primary-color);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+.customer_btn:hover{
+    transition: .5s;
+    background-color:black;
+    border-radius: 5px;
+    color: #fff;
+}
+.customer_div2{
+    background-color: transparent;
+    margin-left: 40px;
+}
+/* ========== service-section ============ */
+
+
+/* ========== business-section ============ */
+.main_business{
+    background-color: rgb(243, 243, 243);
+}
+.business_heading_div{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.business_heading_div p{
+    padding-top: 20px;
+}
+.business_heading_div h1{
+    font-weight: bold;
+}
+.business_card_div{
+    padding-bottom: 60px;
+}
+.business_card_div .card{
+    text-align: center;
+    margin-top: 20px;
+}
+.business_card_div .card i{
+    font-size: 2.2rem;
+    padding-top: 30px;
+}
+.business_card_div .card h1{
+    font-weight: bold;
+}
+.business_card_div .card p{
+    padding-bottom: 20px;
+}
+.seo_div{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.seo_div .card{
+    border: none;
+}
+.img_div{
+    position: relative;
+    bottom: 70px;
+    left: -50px;
+    border-radius: 10px;
+}
+.img_div img{
+    width: 300px;
+    border-radius: 6px;
+}
+
+
+/* ========== business-section ============ */
+
+
+/* ========== team-section ============ */
+.team_heading_div{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.team_heading_div p{
+    padding-top: 20px;
+}
+.team_heading_div h1{
+    font-weight: bold;
+}
+.team_card .card{
+    border: none;
+}
+.team_card img{
+    border: none;
+    height: 500px;
+}
+.bottom_div{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    bottom: 100px;
+    border-radius: 6px;
+    background-color: rgb(49, 50, 52);
+    text-align: center;
+    color: #fff;
+}
+.bottom_div h4{
+    color: #fff;
+}
+.bottom_div p{
+    color: silver;
+}
+.center_div{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.center_div i{
+    color: silver;
+    font-size: 2rem;
+}
+.right_icon{
+    margin-top: 20px;
+    text-align: right;
+}
+.right_icon i{
+    position: relative;
+    bottom: -5.5px;
+    color: silver;
+    font-size: 4.5rem;
+}
+/* ========== team-section ============ */
+
+
+
+/* ========== client-section ============ */
+.client_heading_div{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.client_heading_div p{
+    padding-top: 20px;
+}
+.client_heading_div h1{
+    font-weight: bold;
+}
+.slide_div i{
+    font-size: 3.2rem;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.slide_div p{
+    font-size: 1.1rem;
+}
+.client_img{
+    display: flex;
+}
+.client_img img{
+    width: 70px;
+    margin-left: 20px;
+}
+.client_img h3{
+    margin-left: 30px;
+    padding: 0px;
+}
+.client_img h3 span{
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 0px;
+}
+.carousel_btn{
+    top: 330px;
+}
+/* ========== client-section ============ */
+
+
+
+/* ========== query-section ============ */
+.query_div{
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
+.query_div .card{
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+}
+.question_div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+}
+.question_div p{
+    font-weight: bold;
+}
+.question_div i{
+    font-weight: bold;
+}
+/* ========== query-section ============ */
+
+
+
+/* ========== footer-section ============ */
+#footer{
+    background-color: rgba(3, 13, 19, 0.8);
+    color: #fff;
+}
+#footer .card{
+    background: transparent;
+    border: none;
+}
+#footer .card img{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+#input_div{
+    margin-top: 10px;
+    display: flex;
+}
+#input_div input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: hidden;
+    margin-right: 30px;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+#footer ul li{
+    display: block;
+    /* padding-right: 130px; */
+}
+#footer ul{
+    position: relative;
+    /* padding-right: 130px; */
+    left: -26px;
+}
+#footer ul li {
+    padding-bottom: 10px;
+}
+#footer li a{
+    text-decoration: none;
+    color: #fff;
+    padding-left:10px;
+}
+#footer h1{
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.footer_btn{
+    background-color: var(--primary-color);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+.footer_btn:hover{
+    transition: .5s;
+    background-color:black;
+    border-radius: 5px;
+    color: #fff;
+}
+/* ========== footer-section ============ */
+
+
